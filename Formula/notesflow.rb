@@ -25,8 +25,13 @@ class Notesflow < Formula
     end
   end
 
-  depends_on "neovim"
-  depends_on "poppler"
+  bottle do
+    root_url "https://github.com/AndreaUnali/notesflow/releases/download/v0.1.0"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "1d62d6acd2faf132e849c763006837030a159e68ddfc8c50c245faeee08bc687"
+    sha256 cellar: :any_skip_relocation, monterey: "03831b993741fefa5d2259a3bf9ea578b5b2e5af24a88a791b1f2043ce03140c"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "4116f308469f1fb7f72a44caaeb29eef62a1554d0d55cf5b9c030fc1c3677ea8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "3ca3b6d8f5a1c9d1d1e08615b38e62ca57120f2e4c458b8d8f53a1fbd92669f3"
+  end
 
   def install
     bin.install "notesflow"
