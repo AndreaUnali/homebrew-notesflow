@@ -13,7 +13,5 @@ cask "notesflow" do
   desc "Terminal workspace for LaTeX notes"
   homepage "https://github.com/AndreaUnali/notesflow"
 
-  depends_on formula: ["neovim", "poppler"]
-
   binary "notesflow"
 end
