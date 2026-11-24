@@ -1,36 +1,36 @@
 class Notesflow < Formula
   desc "Terminal workspace for LaTeX notes"
   homepage "https://github.com/AndreaUnali/notesflow"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     on_arm do
-      url "https://github.com/AndreaUnali/notesflow/releases/download/v0.1.0/notesflow-v0.1.0-darwin-arm64.tar.gz"
-      sha256 "66d8284111dcd0965a7b794f366c3fa84f4614ac91619cde82bb9fae9abc5858"
+      url "https://github.com/AndreaUnali/notesflow/releases/download/v0.1.1/notesflow-v0.1.1-darwin-arm64.tar.gz"
+      sha256 "9db7316a2bb6e805dc8600a67519faf8fe06be0629e30a9de986ba2043b3d3dd"
     end
     on_intel do
-      url "https://github.com/AndreaUnali/notesflow/releases/download/v0.1.0/notesflow-v0.1.0-darwin-amd64.tar.gz"
-      sha256 "ece796e824bdbd025f568b6334fb1542ad50b12230ffce00d2a62ee1c4354153"
+      url "https://github.com/AndreaUnali/notesflow/releases/download/v0.1.1/notesflow-v0.1.1-darwin-amd64.tar.gz"
+      sha256 "998325aaf1b8699ab9f01ff6dd493367ebb5e35a7a862487e9c868e799181c23"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/AndreaUnali/notesflow/releases/download/v0.1.0/notesflow-v0.1.0-linux-arm64.tar.gz"
-      sha256 "98ea93a6188b91140401d3b7eb16f89c75f8d98d5a508163c7101bb3c85a5aae"
+      url "https://github.com/AndreaUnali/notesflow/releases/download/v0.1.1/notesflow-v0.1.1-linux-arm64.tar.gz"
+      sha256 "649ec15d71e024a7a0fdea88fd4c38f52d61fbcb9d32df7e5a43c529d50ac85a"
     end
     on_intel do
-      url "https://github.com/AndreaUnali/notesflow/releases/download/v0.1.0/notesflow-v0.1.0-linux-amd64.tar.gz"
-      sha256 "3bfa7c99fbf282071134e4763bce421050065b3186fafd620de7d5e60cf49eaa"
+      url "https://github.com/AndreaUnali/notesflow/releases/download/v0.1.1/notesflow-v0.1.1-linux-amd64.tar.gz"
+      sha256 "3f610b38009eb705d237f73807476499c93b5c005842f175dca4fde87969c256"
     end
   end
 
   bottle do
-    root_url "https://github.com/AndreaUnali/notesflow/releases/download/v0.1.0"
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "1d62d6acd2faf132e849c763006837030a159e68ddfc8c50c245faeee08bc687"
-    sha256 cellar: :any_skip_relocation, monterey: "03831b993741fefa5d2259a3bf9ea578b5b2e5af24a88a791b1f2043ce03140c"
-    sha256 cellar: :any_skip_relocation, arm64_linux: "4116f308469f1fb7f72a44caaeb29eef62a1554d0d55cf5b9c030fc1c3677ea8"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3ca3b6d8f5a1c9d1d1e08615b38e62ca57120f2e4c458b8d8f53a1fbd92669f3"
+    root_url "https://github.com/AndreaUnali/notesflow/releases/download/v0.1.1"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "93e55d8ada3dd65ff6b6f3635a64669f1da88c1b649c6d1d2bd38918f2ceb552"
+    sha256 cellar: :any_skip_relocation, monterey: "d7b0af27a34054363e23c43f0ff249acbd3b73301fa699d9f6da5e012aa9a128"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "9a791f38f63cc97f957104da3017b4c1b27a53e098bd0e0e5eaf945ddb444e85"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "40286d5c3d611c1bf88dfd4be7dc8a6049f4cf46b8ce7d0977c3497fc2f4704f"
   end
 
   def install
